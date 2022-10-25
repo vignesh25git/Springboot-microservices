@@ -21,6 +21,15 @@ public class Validate {
 		
 	}
 	
+	public static boolean isAgeinLimit(int age) {
+
+		if (age < 44) {
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
 		
 	
 	
