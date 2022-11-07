@@ -2,9 +2,9 @@ package com.vicky.service;
 
 import org.springframework.stereotype.Service;
 
-import com.vicky.exception.AgeException;
 import com.vicky.exception.InvalidAgeException;
-import com.vicky.exception.InvalidEmployeeNameException;
+import com.vicky.exception.InvalidCharacterException;
+import com.vicky.exception.InvalidFirstLetterException;
 import com.vicky.pojo.Employee;
 import com.vicky.pojo.Response;
 import com.vicky.utils.Validate;
@@ -14,29 +14,27 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public Response validateEmployee(Employee employee) {
-		
+
 		if (Validate.validateSpecialCharacter(employee.getEmpname())) {
-			
-			throw new InvalidEmployeeNameException("Employee name contains Special character - Invalid");
-			
+
+			throw new InvalidCharacterException();
+
 		}
-		
+
 		if (!Validate.isFirstCharCapital(employee.getEmpname())) {
-			
-			throw new InvalidEmployeeNameException("Employee name should start with capital letter");
-			
+
+			throw new InvalidFirstLetterException();
+
 		}
-		
+
 		if (!Validate.isAgeinLimit(employee.getEmpage())) {
-			
-			throw new AgeException("Employee age should be 1 - 44");
-			
-		} else {
-			
-			return new Response(employee,"Good Employee");
+
+			throw new InvalidAgeException();
+
 		}
-		
-		
+
+		return new Response(employee, "Good Employee");
+
 	}
 
 }

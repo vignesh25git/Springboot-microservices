@@ -22,7 +22,6 @@ public class EmployeeController {
 	@ResponseBody
 	public Response processEmployee(@RequestBody Employee employee) {
 		
-		System.out.println("process employee");
 		
 		return employeeService.validateEmployee(employee);
 		

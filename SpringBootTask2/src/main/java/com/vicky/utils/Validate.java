@@ -10,7 +10,6 @@ public class Validate {
 		Pattern pattern = Pattern.compile("[^a-zA-Z0-9]");
         Matcher matcher = pattern.matcher(name);
         boolean isStringContainsSpecialCharacter = matcher.find();
-        System.out.println("special char " + isStringContainsSpecialCharacter);
 		return isStringContainsSpecialCharacter;
 		
 	}
@@ -23,11 +22,12 @@ public class Validate {
 	
 	public static boolean isAgeinLimit(int age) {
 
-		if (age < 44) {
+		if (age >= 1 & age < 44) {
 			return true;
 		} else {
 			return false;
 		}
+		
 		
 	}
 		

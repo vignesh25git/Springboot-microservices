@@ -1,24 +1,19 @@
 package com.vicky.exception;
 
-public class InvalidAgeException extends RuntimeException{
+public class InvalidCharacterException extends RuntimeException  {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	public String message;
 	
-	public InvalidAgeException() {
+	public InvalidCharacterException() {
 		super();
-	
 	}
 
-	public InvalidAgeException(String message) {
+	public InvalidCharacterException(String message) {
 		super(message);
 		this.message = message;
 	}
-	
 	
 
 }

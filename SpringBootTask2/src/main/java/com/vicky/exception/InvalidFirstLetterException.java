@@ -1,6 +1,6 @@
 package com.vicky.exception;
 
-public class InvalidAgeException extends RuntimeException{
+public class InvalidFirstLetterException extends RuntimeException{
 
 	/**
 	 * 
@@ -8,17 +8,14 @@ public class InvalidAgeException extends RuntimeException{
 	private static final long serialVersionUID = 1L;
 	
 	public String message;
-	
-	public InvalidAgeException() {
+
+	public InvalidFirstLetterException() {
 		super();
-	
 	}
 
-	public InvalidAgeException(String message) {
+	public InvalidFirstLetterException(String message) {
 		super(message);
 		this.message = message;
 	}
-	
-	
 
 }
