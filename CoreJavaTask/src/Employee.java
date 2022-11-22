@@ -6,19 +6,25 @@ public class Employee {
 	private String empgender;
 	private int empage;
 	private int empsalary;
+	private String dept;
+	
 	
 	public Employee() {
 		super();
 	}
 
-	public Employee(int empid, String empname, String empgender, int empage, int empsalary) {
+
+	public Employee(int empid, String empname, String empgender, int empage, int empsalary, String dept) {
 		super();
 		this.empid = empid;
 		this.empname = empname;
 		this.empgender = empgender;
 		this.empage = empage;
 		this.empsalary = empsalary;
+		this.dept = dept;
 	}
+
+
 
 	public int getEmpid() {
 		return empid;
@@ -60,6 +66,15 @@ public class Employee {
 		this.empsalary = empsalary;
 	}
 
+	public String getDept() {
+		return dept;
+	}
+
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+
+	
 	@Override
 	public String toString() {
 		return "Employee [empid=" + empid + ", empname=" + empname + ", empgender=" + empgender + ", empage=" + empage

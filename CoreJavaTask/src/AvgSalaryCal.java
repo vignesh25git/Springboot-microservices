@@ -9,15 +9,15 @@ public class AvgSalaryCal {
 		
 		List<Employee> emplist = new ArrayList<>();
 		
-		Employee emp1 = new Employee(1,"Sam","M",44,65000);
-		Employee emp2 = new Employee(2,"Rahul","M",42,85000);
-		Employee emp3 = new Employee(3,"Samantha","F",34,55000);
-		Employee emp4 = new Employee(4,"Trisha","F",38,35000);
-		Employee emp5 = new Employee(5,"Ramya","F",24,25000);
-		Employee emp6 = new Employee(6,"Priyanka","F",26,85000);
-		Employee emp7 = new Employee(7,"Jothika","F",42,95000);
-		Employee emp8 = new Employee(8,"Simran","F",43,45000);
-		Employee emp9 = new Employee(9,"Divya","F",27,55000);
+		Employee emp1 = new Employee(1,"Sam","M",44,65000,"ECE");
+		Employee emp2 = new Employee(2,"Rahul","M",42,85000,"IT");
+		Employee emp3 = new Employee(3,"Samantha","F",34,55000,"CSC");
+		Employee emp4 = new Employee(4,"Trisha","F",38,35000,"ECE");
+		Employee emp5 = new Employee(5,"Ramya","F",24,25000,"IT");
+		Employee emp6 = new Employee(6,"Priyanka","F",26,85000,"ECE");
+		Employee emp7 = new Employee(7,"Jothika","F",42,95000,"CSC");
+		Employee emp8 = new Employee(8,"Simran","F",43,45000,"CSC");
+		Employee emp9 = new Employee(9,"Divya","F",27,55000,"IT");
 
 		
 		emplist.add(emp1);
