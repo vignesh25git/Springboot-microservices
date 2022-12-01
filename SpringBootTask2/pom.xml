@@ -11,6 +11,8 @@
 	<groupId>com.vicky</groupId>
 	<artifactId>SpringBootTask2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	  <packaging>war</packaging>
+
 	<name>SpringBootTask2</name>
 	<description>SpringBootTask2</description>
 	<properties>
